@@ -451,7 +451,8 @@ def main(args):
                             args.pretrained_vae_name_or_path or args.pretrained_model_name_or_path,
                             subfolder=None if args.pretrained_vae_name_or_path else "vae",
                             revision=None if args.pretrained_vae_name_or_path else args.revision,
-                            torch_dtype=torch_dtype
+                            torch_dtype=torch_dtype,
+                            safety_checker=None
                         ),
                         torch_dtype=torch_dtype,
                         safety_checker=None,
